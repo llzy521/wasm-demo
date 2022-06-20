@@ -1,0 +1,22 @@
+{
+  "name": "webassembly-web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "watch": "rsw watch",
+    "rsw": "rsw",
+    "build": "rsw build && yarn fe:build",
+    "fe:build": "tsc && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25",
+    "webassembly-rust": "file:../webassembly-rust/pkg"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.0",
+    "vite": "^2.9.0",
+    "vite-plugin-rsw": "^2.0.2"
+  }
+}
